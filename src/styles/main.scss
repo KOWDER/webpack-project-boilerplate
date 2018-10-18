@@ -1,0 +1,12 @@
+// import base styles
+@import './base/index';
+// import component styles
+@import './components/index';
+// import the helpers
+@import './helpers/index';
+// import layout styles
+@import './layout/index';
+// import page specific styling
+@import './pages/index';
+// import vendors
+@import './vendors/index';
