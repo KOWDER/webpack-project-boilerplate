@@ -3,12 +3,12 @@
 // import component styles
 @import './components/index';
 // import the helpers
-@import './helpers/index';
+@import './globals/index';
 // import layout styles
 @import './layout/index';
 // import page specific styling
 @import './pages/index';
 // import vendors
 @import './vendors/index';
-
-// import your fonts from ../fonts/font-name/font-name.css
+// import section styling
+@import './sections/index';
