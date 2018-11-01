@@ -47,7 +47,7 @@ module.exports = {
         ]
       },
       {
-        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+        test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
         use: [{
           loader: 'file-loader',
           options: {
@@ -55,7 +55,20 @@ module.exports = {
             outputPath: 'fonts/'
           }
         }]
-    }
+      },
+      { 
+        test: /\.(png|jpg|gif|svg)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'assets/',
+              publicPath: 'assets/'
+            }
+          }
+        ] 
+      }
     ]
   },
   plugins: [
